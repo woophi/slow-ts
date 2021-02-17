@@ -49,8 +49,6 @@ export type FetchingReadyPayload = {
   data?: any;
 };
 
-export type DataState = { [key in FetchingStateName]?: FetchingDataType<key> };
-
 export type ParamsUpdateInfo = {
   [FetchingStateName.NewDelation]: DelationReason;
 };
