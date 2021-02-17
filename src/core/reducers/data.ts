@@ -1,13 +1,13 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import {
-  FetchingDataType,
+  DataState,
   FetchingReadyPayload,
   FetchingStateName,
   FetchingStatus,
   FetchingUpdatePayload,
 } from "core/models";
 
-const initialState: { [key in FetchingStateName]?: FetchingDataType<key> } = {};
+const initialState: DataState = {};
 
 const dataSlice = createSlice({
   name: "data",
